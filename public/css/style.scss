@@ -1,0 +1,208 @@
+$base-color :#3C5AE6;
+$base-gray :#525252;
+
+
+body,ul,h2,a{
+    margin: auto 0 !important;
+    padding: 0 auto !important;
+    text-decoration: none !important;
+    color: black;
+
+    font-family: "Vazir" !important;
+}
+p{
+    margin: 0 0 !important;
+}
+// navbar
+.navbar{
+    display: flex;
+    justify-content: space-evenly !important;
+    line-height: 4;
+    // background-color: red;
+}
+.register{
+
+ .register__sing-up{
+  background-color: $base-color !important;
+  color: #fff !important;
+margin: 0 2rem;
+ }
+ .register__sing-in{
+    margin: 0 2rem;
+    color: $base-gray;
+ }
+}
+.menu{
+    .menu__list{
+        display: flex;
+            .menu__item{
+                margin: 0 2rem;
+                list-style: none;
+                 a {
+                        text-decoration: none;
+                    color: $base-gray;
+                    }
+                    a:hover{
+                        color: $base-color;
+                    }
+            }
+    }
+}
+.logo{
+    .logo__name{
+        font-weight: bolder;
+        display: contents;
+ }
+}
+// banner
+.title{
+    display: flex;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .title__text{
+        .title__wellcome {
+                text-align: center;
+                h2 {
+                    font-weight: 900 !important;
+                    font-size: 3rem;
+    
+                }
+             p{
+                color: $base-gray;
+                margin: 2rem 2rem;
+             } 
+            }
+    }
+    .title__image img{
+        width: 24rem;
+        height: 35rem;
+    }
+    .title__install-banner-app{
+        display: flex;
+        justify-content: center;
+        margin-top: 5rem;
+        .title__android{
+            width: 12rem;
+            height: 4rem;
+            margin: 0 2rem;
+        }
+        .title__apple{
+            width: 12rem;
+            height: 4rem;
+            margin: 0 2rem;
+        }
+    }
+}
+
+
+// best coins
+// .top_coins{
+//     text-align: center;
+//     background-color: $base-color;
+//     padding-top: 2rem;
+//     padding-bottom: 2rem;
+//     h2 {
+//         font-weight: 900;
+//         font-size: 2rem;
+//         color: #fff;
+//         margin-bottom: 2rem;
+//     }
+// }
+// .top-coins__coin{
+//     display: flex;
+//         flex-direction: column;
+//         align-items: center;
+// }
+// .coin{
+//     margin: 0.5rem 2rem;
+//     padding: 1rem 5rem;
+//     width: 80%;
+//     direction: ltr;
+//     display: flex;
+//     justify-content: space-between;
+//     border: 1px solid #fff;
+//     border-radius: 20px;
+//     -webkit-border-radius: 20px;
+//     -moz-border-radius: 20px;
+//     -ms-border-radius: 20px;
+//     -o-border-radius: 20px;
+//     background-color: #fff;
+// }
+// coins of Market
+.column-market{
+    border: 1px solid black;
+    border-radius: 10px;
+    ul{
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        list-style: {
+            margin: 10px
+        };
+    }
+@media screen and (max-width: 760px) {
+    ul{
+        grid-template-columns: repeat(4,1fr);
+        li:nth-child(5) ,li:nth-child(6) {
+            display: none;
+            }
+        }
+    }
+}
+.coin{
+    border: 1px solid black;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 5px 0;
+    
+        ul {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            li{
+                display: flex;
+                align-items: center;
+            }
+            li:nth-child(2){
+                display: flex;
+                align-items: center;
+                img{
+                    width: 2rem;
+                    height: 2rem;
+                    margin-right: 10px;
+                }
+            }
+    
+        }
+    
+        @media screen and (max-width: 760px) {
+            ul {
+                grid-template-columns: repeat(4, 1fr);
+    
+                li:nth-child(5),
+                li:nth-child(6) {
+                    display: none;
+                }
+            }
+        }
+}
+.coin:hover{
+    background-color: $base-color;
+    ul{
+        li{
+            color: #fff;
+        }
+    }
+}
+
+.about-coin{
+    .about-coin__table{
+        width: 100%;
+        border: 1px solid $base-gray;
+        text-align: center;
+        margin: 20px auto;
+}
+
+}

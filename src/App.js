@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState, useEffect } from "react";
+
+import { Outlet } from "react-router-dom";
+
+import { GETcoins } from "./services/exchangeConect";
+import { coinsContext } from "./context/exchangeContext";
+
+import Navbar from "./components/Navbar";
 
 function App() {
+  const [coins, setCoins] = useState([]);
+
+  useEffect(() => {
+    const fechData = async () => {
+      const { data } = await GETcoins();
+      try {
+        setCoins(data);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    fechData();
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <coinsContext.Provider value={{ coins, setCoins }}>
+        <Navbar />
+        <Outlet />
+      </coinsContext.Provider>
+    </>
   );
 }
 

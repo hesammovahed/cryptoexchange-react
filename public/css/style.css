@@ -1,0 +1,152 @@
+body, ul, h2, a {
+  margin: auto 0 !important;
+  padding: 0 auto !important;
+  text-decoration: none !important;
+  color: black;
+  font-family: "Vazir" !important;
+}
+
+p {
+  margin: 0 0 !important;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly !important;
+  line-height: 4;
+}
+
+.register .register__sing-up {
+  background-color: #3C5AE6 !important;
+  color: #fff !important;
+  margin: 0 2rem;
+}
+.register .register__sing-in {
+  margin: 0 2rem;
+  color: #525252;
+}
+
+.menu .menu__list {
+  display: flex;
+}
+.menu .menu__list .menu__item {
+  margin: 0 2rem;
+  list-style: none;
+}
+.menu .menu__list .menu__item a {
+  text-decoration: none;
+  color: #525252;
+}
+.menu .menu__list .menu__item a:hover {
+  color: #3C5AE6;
+}
+
+.logo .logo__name {
+  font-weight: bolder;
+  display: contents;
+}
+
+.title {
+  display: flex;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title .title__text .title__wellcome {
+  text-align: center;
+}
+.title .title__text .title__wellcome h2 {
+  font-weight: 900 !important;
+  font-size: 3rem;
+}
+.title .title__text .title__wellcome p {
+  color: #525252;
+  margin: 2rem 2rem;
+}
+.title .title__image img {
+  width: 24rem;
+  height: 35rem;
+}
+.title .title__install-banner-app {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+.title .title__install-banner-app .title__android {
+  width: 12rem;
+  height: 4rem;
+  margin: 0 2rem;
+}
+.title .title__install-banner-app .title__apple {
+  width: 12rem;
+  height: 4rem;
+  margin: 0 2rem;
+}
+
+.column-market {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.column-market ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  list-style-margin: 10px;
+}
+@media screen and (max-width: 760px) {
+  .column-market ul {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .column-market ul li:nth-child(5), .column-market ul li:nth-child(6) {
+    display: none;
+  }
+}
+
+.coin {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 5px 0;
+}
+.coin ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.coin ul li {
+  display: flex;
+  align-items: center;
+}
+.coin ul li:nth-child(2) {
+  display: flex;
+  align-items: center;
+}
+.coin ul li:nth-child(2) img {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 10px;
+}
+@media screen and (max-width: 760px) {
+  .coin ul {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .coin ul li:nth-child(5),
+.coin ul li:nth-child(6) {
+    display: none;
+  }
+}
+
+.coin:hover {
+  background-color: #3C5AE6;
+}
+.coin:hover ul li {
+  color: #fff;
+}
+
+.about-coin .about-coin__table {
+  width: 100%;
+  border: 1px solid #525252;
+  text-align: center;
+  margin: 20px auto;
+}/*# sourceMappingURL=style.css.map */
