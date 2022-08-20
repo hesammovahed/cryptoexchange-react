@@ -47,7 +47,7 @@ p {
 }
 
 .title {
-  display: flex;
+  box-sizing: border-box;
   margin-top: 2rem;
   display: flex;
   justify-content: center;
@@ -55,6 +55,11 @@ p {
 }
 .title .title__text .title__wellcome {
   text-align: center;
+}
+@media (max-width: 600px) {
+  .title .title__text .title__wellcome h2 {
+    font-size: 2rem !important;
+  }
 }
 .title .title__text .title__wellcome h2 {
   font-weight: 900 !important;
@@ -68,8 +73,14 @@ p {
   width: 24rem;
   height: 35rem;
 }
+@media (max-width: 870px) {
+  .title .title__image img {
+    display: none;
+  }
+}
 .title .title__install-banner-app {
   display: flex;
+  box-sizing: border-box;
   justify-content: center;
   margin-top: 5rem;
 }
@@ -78,10 +89,24 @@ p {
   height: 4rem;
   margin: 0 2rem;
 }
+@media (max-width: 600px) {
+  .title .title__install-banner-app .title__android {
+    margin: 10px;
+    width: 10rem;
+    height: 4rem;
+  }
+}
 .title .title__install-banner-app .title__apple {
   width: 12rem;
   height: 4rem;
   margin: 0 2rem;
+}
+@media (max-width: 600px) {
+  .title .title__install-banner-app .title__apple {
+    margin: 10px;
+    width: 10rem;
+    height: 4rem;
+  }
 }
 
 .column-market {

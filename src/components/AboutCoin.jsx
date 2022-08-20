@@ -39,9 +39,12 @@ const AboutCoin = () => {
     <div className="container about-coin">
       <div
         className="about-coin-img"
-        style={{ display: "flex", justifyContent: "center" }}
+        style={{ "textAlign":"center"}}
       >
         {coin.image ? <img src={coin.image.large} alt={coin.id} /> : null}
+        <div style={{"margin":"20px" ,"fontSize":"2rem" ,"fontWeight":"800"}}>
+          {coin.name}
+        </div>
       </div>
 
       <table className="about-coin__table">

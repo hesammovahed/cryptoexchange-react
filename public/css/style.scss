@@ -56,14 +56,23 @@ margin: 0 2rem;
 }
 // banner
 .title{
-    display: flex;
+    box-sizing: border-box;
     margin-top: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    @media  screen and (max-with:870px) {
+
+    }
     .title__text{
         .title__wellcome {
                 text-align: center;
+                @media (max-width:600px) {
+                    h2{
+                        font-size: 2rem !important;
+                    }
+                    
+                }
                 h2 {
                     font-weight: 900 !important;
                     font-size: 3rem;
@@ -78,58 +87,38 @@ margin: 0 2rem;
     .title__image img{
         width: 24rem;
         height: 35rem;
+        @media (max-width:870px) {
+            display: none;
+        }
     }
     .title__install-banner-app{
         display: flex;
+        box-sizing: border-box;
         justify-content: center;
         margin-top: 5rem;
+       
         .title__android{
             width: 12rem;
             height: 4rem;
             margin: 0 2rem;
+            @media (max-width:600px) {
+                margin: 10px;
+                width: 10rem;
+                height: 4rem;
+            }
         }
         .title__apple{
             width: 12rem;
             height: 4rem;
             margin: 0 2rem;
+            @media (max-width:600px) {
+                margin: 10px;
+                width: 10rem;
+                height: 4rem;
+            }
         }
     }
 }
-
-
-// best coins
-// .top_coins{
-//     text-align: center;
-//     background-color: $base-color;
-//     padding-top: 2rem;
-//     padding-bottom: 2rem;
-//     h2 {
-//         font-weight: 900;
-//         font-size: 2rem;
-//         color: #fff;
-//         margin-bottom: 2rem;
-//     }
-// }
-// .top-coins__coin{
-//     display: flex;
-//         flex-direction: column;
-//         align-items: center;
-// }
-// .coin{
-//     margin: 0.5rem 2rem;
-//     padding: 1rem 5rem;
-//     width: 80%;
-//     direction: ltr;
-//     display: flex;
-//     justify-content: space-between;
-//     border: 1px solid #fff;
-//     border-radius: 20px;
-//     -webkit-border-radius: 20px;
-//     -moz-border-radius: 20px;
-//     -ms-border-radius: 20px;
-//     -o-border-radius: 20px;
-//     background-color: #fff;
-// }
 // coins of Market
 .column-market{
     border: 1px solid black;
